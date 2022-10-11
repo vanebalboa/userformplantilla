@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <!-- HEADER -->
+    <head>
+      <title>User Form</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+ <!-- BODY -->
+    <body>
+      <!-- titulo -->
+      <header class="header">
+        <h1 id="title">Encuesta de Servicio TecManía </h1>
+        <p class="description" id="description" >Ayudanos a brindarte un mejor servicio </p>
+      </header>
+
+    <!-- FORM -->
+    <form id="survey-form">
+      <fieldset>
+
+        <!-- TEXTO -->
+        <div>
+          <label id="name-label">Nombre</label>
+          <input id="name" placeholder="Escriba aquí" type="text" required class="form-control" />
+        </div> 
+        
+        <div>
+          <label id="email-label">Correo Electrónico</label>
+          <input id="email" placeholder="Escriba aquí" type="email" required class="form-control" />
+        </div>
+
+        <div>
+          <label id="number-label">Edad (opcional)</label>
+          <input id="number" placeholder="Seleccione aquí" type="number" min="13" max="110" class="form-control" />
+        </div>
+    
+
+      <!-- DROPDOWN -->
+        <div>
+          <label>Cómo te enteraste de nosotros?</label>
+          <select id="dropdown" class="form-control">
+            <option value="">(Seleccione uno)</option>
+            <option value="1">Amazon</option>
+            <option value="2">Mercado Libre</option>
+            <option value="3">Redes sociales</option>
+            <option value="4">Otro</option>
+          </select>
+        </div>
+      
+
+        <!-- CHECKBOX -->
+        <div>
+          <label>Qué producto ha comprado con TecManía?</label>
+          <label><input type="checkbox" value="Producto1" name="producto" class="input-checkbox"/> Producto1</label>
+          <label><input type="checkbox" value="Producto2" name="producto" class="input-checkbox"/> Producto2</label>
+          <label><input type="checkbox" value="Producto3" name="producto" class="input-checkbox"/> Producto3</label>
+        </div>
+
+      <!-- RADIO -->
+        <div>
+          <label>Qué piensa de la calidad del servicio?</label>
+          <label><input type="radio" value="bueno" name="calidad" class="input-radio"/> Buena</label>
+          <label><input type="radio" value="regular" name="calidad" class="input-radio"/> Regular</label>
+          <label><input type="radio" value="mala" name="calidad" class="input-radio"/> Mala</label>
+        </div>
+
+      <!-- TEXTBOX -->
+        <div>
+          <label for="bio">Escríbanos sus comentarios:</label>
+          <textarea id="bio" name="bio" rows="3" cols="30" class="input-textarea"  placeholder="Escriba aquí sus comentarios..."></textarea>
+        </div>
+       
+      </fieldset>
+
+      <!-- BUTTON -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      
+      <!-- FOOTER 
+        <label id="copyright" class="copyright" >@Copyright TecMania S.A de C.V.</label>-->
+
+     </form>
+    </body>
+  </html>
