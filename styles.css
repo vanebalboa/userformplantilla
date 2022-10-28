@@ -128,3 +128,10 @@ div {
 .copyright {
   font-size: 0.5rem;
 }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .submit-button {
+    width: 60%;
+  }
+}
