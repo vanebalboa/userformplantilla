@@ -98,7 +98,7 @@ div {
 .input-textarea {
   font-size: 1.125rem;
   min-height: 120px;
-  width: 90%;
+  width: 100%;
   resize: vertical;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
